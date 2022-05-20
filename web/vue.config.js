@@ -1,5 +1,6 @@
 const Components = require('unplugin-vue-components/webpack')
 const { ElementPlusResolver } = require('unplugin-vue-components/resolvers')
+const { isRuntimeOnly, registerRuntimeCompiler } = require('vue')
 module.exports = {
     configureWebpack: {
         plugins: [
@@ -7,10 +8,12 @@ module.exports = {
             }),
             Components({
                 resolvers: [ElementPlusResolver()],
+                
             })
         ],
 
     },
+    
 
     devServer: {
         port: 3000,
