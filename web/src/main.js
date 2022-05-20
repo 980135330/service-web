@@ -10,7 +10,8 @@ import { createRouter,createWebHistory} from 'vue-router'
 
 const Home = { template: '<h1>hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh<h1>' }
 const routes = [
-    { path: '/', component: Home}
+    { path: '/', component: Home},
+    { path: '/test', component: Home}
   ]
   const router = createRouter({
     // 4. Provide the history implementation to use. We are using the hash history for simplicity here.
